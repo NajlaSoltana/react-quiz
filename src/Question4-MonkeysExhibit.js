@@ -4,9 +4,15 @@
  * Convert the MonkeysExhibit component below to a class component.
  */
 
-import React from "react";
 
-function MonkeysExhibit(props) {
+import React, { MonkeysExhibit } from 'react'
+
+
+class MonkeysExhibit extends Component {
+  constructor(props) {
+    super(props)
+     
+  render(){
   return (
     <section className="monkeys">
       <h2>Latin name: {props.latinName}</h2>
@@ -17,6 +23,6 @@ function MonkeysExhibit(props) {
       </ul>
     </section>
   );
-}
+}}
 
 export default MonkeysExhibit;

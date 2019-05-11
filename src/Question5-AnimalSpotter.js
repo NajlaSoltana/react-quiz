@@ -13,18 +13,20 @@ import React, { Component } from "react";
 class AnimalSpotter extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { count: 0};
   }
+  
 
   render() {
     return (
       <div className="animal-spotter">
         <p>Number of animals spotted: {this.state.animalSpotted}</p>
-        <CounterButton handleClick={this.spotAnimal} />
+        <CounterButton handleClick={this.spotAnimal({
+          count: this.state.count + 1
+        })} />
       </div>
     );
   }
-}
 
 function CounterButton(props) {
   return (
@@ -35,3 +37,6 @@ function CounterButton(props) {
 }
 
 export default AnimalSpotter;
+
+
+ 

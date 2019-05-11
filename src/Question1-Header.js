@@ -1,12 +1,5 @@
-/* DELETE THIS LINE AND WRITE THE ANSWER TO QUESTION 1 HERE */
 
-/*
- * ============= Question 1 =============
- *
- * There is an import statement is missing from this file.
- *
- * Identify what it should be and write it on line 1 above.
- */
+import Header from './Header'
 
 function Header() {
   return (

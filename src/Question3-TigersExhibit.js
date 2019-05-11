@@ -18,14 +18,24 @@
 
 import React from "react";
 
+const habitats = ["","" ,""];
+
 function TigersExhibit() {
   return (
     <div className="tigers">
       <h2>Tigers</h2>
       <p>There are ... tigers in the world</p>
-      <ul>{/* DELETE THIS LINE AND WRITE THE ANSWER PART B HERE */}</ul>
+      <ul>{this.props.TigersExhibit.map((population) => {
+        return (
+
+          <li><p>There are {population} tigers in the world</p> </li>
+        )
+      })}</ul>
     </div>
   );
 }
+
+
+   
 
 export default TigersExhibit;
